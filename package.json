@@ -1,0 +1,44 @@
+{
+  "name": "electron-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "prod": "webpack --config webpack.prod.config.js && electron --noDevServer .",
+    "dev": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js",
+    "build": "webpack --config webpack.prod.config.js",
+    "package": "webpack --config webpack.prod.config.js",
+    "postpackage": "electron-packager ./ --out=./builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taimoormk/electron-react.git"
+  },
+  "author": "Taimoor Khan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Taimoormk/electron-react/issues"
+  },
+  "homepage": "https://github.com/Taimoormk/electron-react#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babili-webpack-plugin": "^0.1.2",
+    "css-loader": "^1.0.0",
+    "electron": "^2.0.5",
+    "electron-builder": "^20.26.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
